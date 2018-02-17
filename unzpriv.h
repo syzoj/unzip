@@ -273,7 +273,7 @@
 #  include <stat.h>
 #  include <fcntl.h>
 #  include <limits.h>
-#  define SYMLINKS
+// #  define SYMLINKS
 #  define EXE_EXTENSION  ".tos"
 #  ifndef DATE_FORMAT
 #    define DATE_FORMAT  DF_DMY
@@ -341,7 +341,7 @@
 #  define lenEOL        1
 #  define PutNativeEOL  *q++ = native(LF);
 #  define INT_SPRINTF
-#  define SYMLINKS
+// #  define SYMLINKS
 #  ifdef SFX
 #    define MAIN main_sfx
 #  endif
@@ -1308,12 +1308,12 @@
 #  define S_IEXEC   S_IXUSR
 #endif
 
-#if (defined(UNIX) && defined(S_IFLNK) && !defined(MTS))
-#  define SYMLINKS
-#  ifndef S_ISLNK
-#    define S_ISLNK(m)  (((m) & S_IFMT) == S_IFLNK)
-#  endif
-#endif /* UNIX && S_IFLNK && !MTS */
+// #if (defined(UNIX) && defined(S_IFLNK) && !defined(MTS))
+// #  define SYMLINKS
+// #  ifndef S_ISLNK
+// #    define S_ISLNK(m)  (((m) & S_IFMT) == S_IFLNK)
+// #  endif
+// #endif /* UNIX && S_IFLNK && !MTS */
 
 #ifndef S_ISDIR
 #  ifdef CMS_MVS

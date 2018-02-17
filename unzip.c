@@ -580,7 +580,7 @@ Send bug reports using //www.info-zip.org/zip-bug.html; see README for details.\
 #else /* !VMS */
 # ifdef COPYRIGHT_CLEAN
    static ZCONST char Far UnzipUsageLine1[] = "\
-UnZip %d.%d%d%s of %s, by Debian. Original by Info-ZIP.\
+UnZip %d.%d%d%s of %s, modified by Menci for SYZOJ, Original by Debian & Info-ZIP.\
 \n\n";
 # else
    static ZCONST char Far UnzipUsageLine1[] = "\
